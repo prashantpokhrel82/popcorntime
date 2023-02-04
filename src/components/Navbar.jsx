@@ -84,6 +84,7 @@ const Wrapper = styled.div`
     padding: 0 4rem;
     background: transparent;
     transition: background 0.3s ease;
+    z-index: 10;
   }
 
   .nav-wrapper.dark {
