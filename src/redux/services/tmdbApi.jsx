@@ -2,6 +2,9 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const tmdbApiToken = process.env.REACT_APP_TMDB_API_TOKEN;
 
+const originalImagePath = "https://image.tmdb.org/t/p/original";
+const w500ImagePath = "https://image.tmdb.org/t/p/w500";
+
 export const tmbdApi = createApi({
   reducerPath: "tmdbApi",
   baseQuery: fetchBaseQuery({

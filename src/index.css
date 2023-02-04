@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +25,9 @@ a {
   --color-primary-variant: rgb(0, 232, 247, 0.5);
   --color-secondary: #008da9;
   --color-secondary-variant: rgba(rgb(0, 141, 169, 0.5));
+
+  --color-white: #fcfcfc;
+  --color-black: #030303;
 
   --grey-100: #f1f1f1;
   --grey-200: #d4d4d4;
