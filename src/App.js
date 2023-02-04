@@ -1,6 +1,6 @@
 import "./App.css";
 import { useGetMovieByMovieIdQuery } from "./redux/services/tmdbApi";
-import { Navbar } from "./components";
+import { Navbar, Hero } from "./components";
 
 function App() {
   // const { data, isFetching, isError } = useGetMovieByMovieIdQuery("spiderman");
@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="app">
       <Navbar />
+      <Hero />
     </div>
   );
 }

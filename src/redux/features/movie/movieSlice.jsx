@@ -1,12 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {};
+const initialState = {
+  trendingMovies: [],
+};
 
 const movieSlice = createSlice({
   name: "movie",
   initialState,
-  reducers: {},
+  reducers: {
+    setTrendingMovies: (state, { payload }) => {
+      state.trendingMovies = payload;
+    },
+  },
 });
 
 export default movieSlice.reducer;
-// export const {} = movieSlice.actions;
+export const { setTrendingMovies } = movieSlice.actions;
