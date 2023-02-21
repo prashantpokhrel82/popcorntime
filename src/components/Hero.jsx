@@ -10,14 +10,18 @@ import {
   originalImagePath,
   placeholderImagePath,
 } from "../assets/data/tmdbImageConstants";
+import Loading from "./Loading";
+import Error from "./Error";
 
 const Hero = () => {
   const dispatch = useDispatch();
   const { data, isFetching, isError } = useGetMoviesTrendingQuery();
-  if (isFetching) return <p>Loading...</p>;
-  if (isError) return <p>Error</p>;
-  console.log(data);
-  //   dispatch(setTrendingMovies(data));
+  useEffect(() => {
+    dispatch(setTrendingMovies(data?.results));
+  }, [data]);
+
+  if (isFetching) return <Loading />;
+  if (isError) return <Error />;
 
   const getRandomTrendingMovie = () => {
     return data.results[Math.floor(Math.random() * data.results.length)];

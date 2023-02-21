@@ -26,6 +26,7 @@ a {
   --color-secondary: #008da9;
   --color-secondary-variant: rgba(rgb(0, 141, 169, 0.5));
 
+  --color-background: #141414;
   --color-white: #fcfcfc;
   --color-black: #030303;
 
@@ -47,6 +48,7 @@ a {
 }
 body {
   font-family: var(--font-body);
+  background: var(--color-background);
 }
 
 h1,
@@ -56,6 +58,7 @@ h4,
 h5 {
   text-transform: capitalize;
   margin: 1rem 0;
+  color: var(--color-white);
 }
 
 h1 {
