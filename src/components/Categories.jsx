@@ -48,14 +48,13 @@ const Wrapper = styled.div`
   .movie__list {
     display: flex;
     gap: 5px;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    /* overflow-x: scroll; */
     scroll-behavior: smooth;
     margin-top: 0.5rem;
 
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
       display: none;
-    }
+    } */
   }
 
   svg {
@@ -77,7 +76,7 @@ const Wrapper = styled.div`
     display: none;
     opacity: 0;
     cursor: pointer;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: var(--transition-300);
   }
 
