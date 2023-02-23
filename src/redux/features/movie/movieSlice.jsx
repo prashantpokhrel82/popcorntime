@@ -18,5 +18,8 @@ const movieSlice = createSlice({
   },
 });
 
+export const getMovieGenreByGenreId = (store, id) =>
+  store.movie.movieGenres.find((genre) => genre.id === id);
+
 export default movieSlice.reducer;
 export const { setTrendingMovies, setMovieGenres } = movieSlice.actions;
